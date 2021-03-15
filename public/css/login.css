@@ -1,0 +1,95 @@
+#loginPage{
+    width: 40vw;
+    height:40vh;
+    opacity: 0;
+    position: absolute;
+    top: 30vh;
+    left: 30vw;
+    transition: 0.5s all;
+    background-color: #fff;
+    z-index: 200000000000000;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#login_side{
+    background-color: #707070;
+}
+
+#login_side > h2{
+    color: #fff;
+    margin: 30px 10px;
+}
+
+#login_form{
+    position: relative;
+    width: 70%;
+    height: 80%;
+    margin: 10% auto;
+    display: grid;
+    grid-template-rows: 3fr 3fr;
+}
+
+#loginPage.active{
+    opacity: 1;
+}
+
+#login_bc{
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 0.5s all;
+    z-index: 100000000;
+}
+
+#login_bc.active{opacity: 1;}
+
+.login_label{
+    display: block;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.login_input{
+    width: 80%;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 17px;
+    padding-left: 5px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+#login_ok{
+    width: 70px;
+    height: 40px;
+    position: absolute;
+    bottom: -11px;
+    right: -40px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid #FFCD00;
+    border-radius: 10px;
+    color: #FFCD00;
+    font-weight: bold;
+    transition: 0.5s all;
+    cursor: pointer;
+}
+
+#login_ok:hover{
+    color: #fff;
+    background-color: #FFCD00;
+}
+
+#login_error{
+    position: absolute;
+    top: -9%;
+    left: -10px;
+    font-size: 17px;
+    color: #FF4C4C;
+}

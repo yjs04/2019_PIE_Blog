@@ -1,0 +1,71 @@
+.joinPage{
+    width: 60vw;
+    height:50vh;
+    position: absolute;
+    opacity: 0;
+    bottom: 10vh;
+    left: 20vw;
+    border: 3px solid #fff;
+    border-radius: 10px;
+    transition: 0.7s all;
+}
+
+.joinPage.active{
+    opacity: 1;
+}
+
+.join_check{
+    width: 80%;
+    height: 80%;
+    display: grid;
+    grid-template-rows: repeat(1fr,5);
+    margin: 20px auto;
+    margin-top: 40px;
+}
+
+.join_box{
+    display: grid;
+    grid-template-columns: 3fr 9fr;
+    margin: 10px 0;
+}
+
+.join_label{
+    color: #fff;
+    text-align: left;
+    font-size: 20px;
+}
+
+.join_input{
+    width: 80%;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    padding-left: 20px;
+    font-size: 15px;
+}
+.join_box{position: relative;}
+
+#join_ok{
+    position: absolute;
+    bottom: 20px;
+    right: 40px;
+    padding: 5px 15px;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 20px;
+    font-size: 17px;
+    background-color: rgba(0, 0 , 0, 0);
+    transition: 0.5s all;
+}
+
+#join_ok:hover{
+    color: #000;
+    background-color: #fff;
+}
+
+.join_error{
+    position: absolute;
+    left : 200px;
+    bottom: 2px;
+    color: #FFD100;
+}
